@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  backend:
+    image: lucky894/backend-service-cms:v1
+    container_name: cms_backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    restart: always
+  frontend:
+    image: lucky894/frontend-service-cms:v1 
+    container_name: cms_frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    restart: always
