@@ -10,7 +10,8 @@
 
 ## 🔗 Live Demo
 * **Frontend Application:** [https://scalable-cms-deployed.vercel.app](https://scalable-cms-deployed.vercel.app)
-* **Backend API:** Deployed via Render 
+* **Backend API:** [https://scalable-cms-api.onrender.com](https://scalable-cms-api.onrender.com)
+* **API Documentation (Swagger):** [https://scalable-cms-api.onrender.com/api-docs](https://scalable-cms-api.onrender.com/api-docs)
 
 ---
 
