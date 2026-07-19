@@ -18,6 +18,7 @@
 
 ### 🛡️ Security & Identity Management
 * **Stateless Authentication:** Secure OAuth 2.0 flow via Google, utilizing JSON Web Tokens (JWTs) stored in `HttpOnly` cookies to eliminate client-side token theft and mitigate CSRF vulnerabilities.
+* **Bot Mitigation & Resource Protection:** Integrated **Cloudflare Turnstile** across authentication and submission endpoints to thwart brute-force attacks and automated botnets, preserving backend compute resources while maintaining a frictionless user experience.
 * **Redis-Backed OTP:** Optimized, auto-expiring verification flows using Redis keys with precise Time-To-Live (TTL), entirely bypassing slower relational database writes.
 * **Input Sanitization:** Rigorous sanitization of user-generated content via `DOMPurify` to neutralize Cross-Site Scripting (XSS) attack vectors before database persistence.
 * **Algorithmic Traffic Control:** Custom Redis-based rate limiting to safeguard API stability, prevent abuse, and gracefully manage high-velocity traffic spikes.
@@ -113,7 +114,7 @@ CLOUDINARY_API_SECRET=your_secret
 GOOGLE_CLIENT_ID=your_id
 GOOGLE_CLIENT_SECRET=your_secret
 ADMIN_EMAIL=admin@example.com
-RESEND_API_KEY=your_resend_api_key
+BREVO_API_KEY=your_brevo_api_key
 ```
 
 ### 2. Run the Full Stack with Docker Compose
