@@ -47,6 +47,16 @@
 
 ---
 
+## 🚀 Future Roadmap
+As the platform scales, the following technical enhancements are planned for upcoming iterations:
+
+* **Real-Time Bidirectional Communication:** Integrating **Socket.io** to enable live user notifications, real-time analytics dashboards, and collaborative content editing.
+* **Advanced DevOps & Orchestration:** Transitioning from basic containerization to enterprise orchestration using **Kubernetes (K8s)** and migrating the infrastructure to **AWS** for multi-region availability and auto-scaling.
+* **Serverless Edge Computing:** Offloading lightweight, high-frequency API endpoints to serverless environments (Edge Functions) to drastically reduce latency and computational overhead.
+* **Automated CI/CD & Testing:** Implementing a robust testing suite utilizing **Jest** for unit testing, integrated directly into a **GitHub Actions** CI/CD pipeline for zero-downtime, automated deployments.
+
+---
+
 ## 💻 Local Development (Standard Setup)
 
 Follow these steps to run the application locally on your machine without Docker.
